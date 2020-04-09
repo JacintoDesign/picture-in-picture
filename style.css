@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
-body { margin: 0; padding: 0; background-color: black; }
-.wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; width: 100%; }
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    background-color: black; 
+}
+
+.wrapper { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    width: 100%; 
+}
+
 .button {
     position: relative;
     top: -45px;
@@ -16,4 +30,9 @@ body { margin: 0; padding: 0; background-color: black; }
     transition: 0.4s;
     cursor: pointer;
 }
-.button:hover { background-color: #02cccc; color: white; cursor: pointer; }
+
+.button:hover { 
+    background-color: #02cccc; 
+    color: white;
+    cursor: pointer; 
+}
