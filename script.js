@@ -1,17 +1,19 @@
 const videoElement = document.getElementById("videoElement");
-const pipButtonElement = document.getElementById("pipButtonElement");
+const button = document.getElementById("pipButton");
 
-pipButtonElement.addEventListener("click", async function() {
-  pipButtonElement.disabled = true;
-
+button.addEventListener("click", async function() {
+  // Disable Button
+  button.disabled = true;
+  // Button Starts Picture in Picture
   await videoElement.requestPictureInPicture();
-
-  pipButtonElement.disabled = false;
+  // Reset Button
+  button.disabled = false;
 });
 
+// Prompt To Select Media Stream On Load, Playing Streaming Video 
 navigator.mediaDevices.getDisplayMedia().then(function(mediaStream) {
   videoElement.srcObject = mediaStream;
-  videoElement.onloadedmetadata = function (e) {
+  videoElement.onloadedmetadata = function(e) {
     videoElement.play();
   };
 });
