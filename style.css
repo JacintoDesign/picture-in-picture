@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  background: rgb(37, 37, 37);
+html {
+  box-sizing: border-box;
 }
 
-.wrapper {
+body {
+  margin: 0;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100%;
+  background: rgb(37, 37, 37);
 }
 
 .button-container {
@@ -25,7 +23,7 @@ body {
 button {
   width: 120px;
   height: 75px;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   font-size: 25px;
   color: white;
   text-shadow: 0 2px 5px black;
@@ -41,12 +39,7 @@ button:hover {
   background-image: linear-gradient(to bottom, #696969 0%, #505050 100%);
 }
 
-button::before,
-button::after {
-  transition: all 0.25s;
-}
-
 button:active {
-  transform: translateY(0.2rem);
+  transform: translateY(3px);
   box-shadow: 0 6px 6.5px 0 rgba(0, 0, 0, 0.3);
 }

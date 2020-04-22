@@ -1,5 +1,5 @@
-const videoElement = document.getElementById('videoElement');
-const button = document.getElementById('pipButton');
+const videoElement = document.getElementById('video');
+const button = document.getElementById('button');
 
 button.addEventListener('click', async () => {
   // Disable Button
